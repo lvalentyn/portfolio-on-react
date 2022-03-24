@@ -1,0 +1,163 @@
+.app {
+	&__works {
+		flex: 1;
+		flex-direction: column;
+		width: 100%;
+	}
+
+	&__work-filter {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: center;
+		flex-wrap: wrap;
+
+		margin: 4rem 0 2rem;
+
+		&-item {
+			margin: .5rem;
+			padding: .5rem 1rem;
+
+			border-radius: .5rem;
+			background-color: var(--white-color);
+			color: #000;
+			font-weight: 800;
+
+			transition: all .3s ease;
+			cursor: pointer;
+
+			&:hover {
+				background-color: var(--secondary-color);
+				color: var(--white-color);
+			}
+
+			@media screen and (min-width: 2000px) {
+				padding: 1rem 2rem;
+				border-radius: .85rem; 
+			}
+		}
+
+		.item-active {
+			background-color: var(--secondary-color);
+			color: var(--white-color);
+		}
+	}
+
+	&__work-portfolio {
+		display: flex;
+		flex-wrap: wrap;
+		align-content: center;
+		align-items: center;
+	}
+
+	&__work-item {
+		flex-direction: column;
+		
+		margin: 2rem;
+		padding: 1rem;
+
+		width: 270px;
+
+		border-radius: .5rem;
+		background-color:  var(--white-color);
+		color: #000;
+
+		transition: all .3s ease;
+		cursor: pointer;
+
+		&:hover {
+			box-shadow: 0 0 25px rgba(0,0,0,.2);
+		}
+
+		@media screen and (min-width: 2000px) {
+			padding: 1.25rem;
+			width: 470px;
+			border-radius: .75rem;
+		}
+
+		@media screen and (max-width: 450px) {
+			width: 100%;
+			margin: 1rem;
+		}
+	}
+
+	&__work-img {
+		position: relative;
+		
+		width: 100%;
+		height: 230px;
+
+		img {
+			width: 100%;
+			height: 100%;
+			border-radius: .5rem;
+			object-fit: cover;
+		}
+
+		@media screen and (min-width: 2000px) {
+			height: 350px;
+		}
+	}
+
+	&__work-hover {
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+
+		width: 100%;
+		height: 100%;
+
+		background-color: rgba(0,0,0,.5);
+		border-radius: .5rem;
+
+		opacity: 0;
+		transition: all .3s ease;
+
+		div {
+			margin: 1rem;
+			font-family: var(--font-base);
+			font-weight: 800;
+
+			width: 50px;
+			height: 50px;
+
+			border-radius: 50%;
+			background-color: rgba(0,0,0,.5);
+			color: #fff;
+
+			cursor: pointer;
+			transition: all .3s ease;
+
+			svg {
+				width: 50%;
+				height: 50%;
+				color: var(--white-color);
+			}
+		}
+	}
+
+	&__work-content {
+		position: relative;
+
+		flex-direction: column;
+
+		padding: .5rem;
+		width: 100%;
+
+		h4 {
+			margin-top: 1rem;
+			line-height: 1.5;
+		}
+	}
+
+	&__work-tag {
+		position: absolute;
+		top: -25px;
+
+		padding: 0.5rem 1rem;
+		border-radius: 10px;
+		background-color: #fff;
+	}
+}

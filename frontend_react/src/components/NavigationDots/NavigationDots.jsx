@@ -1,7 +1,5 @@
 import React from 'react';
 
-import './NavigationDots.scss';
-
 const NavigationDots = ({ active }) => {
 	return (
 		<div className="app__navigation">
