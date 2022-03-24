@@ -1,4 +1,3 @@
-import React from 'react'
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { HiChevronLeft, HiChevronRight } from 'react-icons/hi';
@@ -58,7 +57,6 @@ const Testimonial = () => {
 					</div>
 				</>
 			)}
-
 
 			<div className="app__testimonial-brands app__flex">
 				{brands.map((brand) => (
