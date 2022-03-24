@@ -1,1 +1,1 @@
-using framer-motion, react-icons
+using framer-motion, react-icons, react-tooltip
