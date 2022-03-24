@@ -64,7 +64,7 @@ const Skills = () => {
 							</div>
 							<motion.div className='app__skills-exp-works'>
 								{experience.works.map((work) => (
-									<div key={work.name}>
+									<div key={work.name + 'skill'}>
 										<motion.div
 											whileInView={{ opacity: [0, 1] }}
 											transition={{ duration: 0.5 }}
